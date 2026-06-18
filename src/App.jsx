@@ -11,7 +11,7 @@ import NotFound from './Pages/NotFound'
 const App = () => {
   return (
     <Router>
-      {/* ส่วนหัวแถบเมนู (Navbar) จาก Bootstrap 5 */}
+      
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div className="container">
           <Link className="navbar-brand fw-bold text-warning" to="/">CourseOnline</Link>
@@ -37,18 +37,18 @@ const App = () => {
         </div>
       </nav>
 
-      {/* ส่วนเนื้อหาหลัก (Main Content) */}
+      
       <main className="container my-5">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/instructors" element={<Instructors />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} /> {/* ดักจับหน้า 404 */}
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       </main>
 
-      {/* ส่วนท้าย (Footer) */}
+      
       <footer className="bg-light text-center text-secondary py-3 border-top mt-auto">
         <p className="mb-0">© 2026 CourseOnline Web. All rights reserved.</p>
       </footer>
